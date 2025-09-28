@@ -5,14 +5,19 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+const ContainerMain = styled.div`
+  display: flex;
+  background: var(--colorPrimary);
+  justify-content: center;
+`;
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  background: var(--colorPrimary);
   color: white;
   justify-content: space-between;
   padding: var(--padding);
   height: 64px;
+  width: 100%;
   font-size: 16px;
   max-width: 1440px;
 `;
@@ -34,4 +39,4 @@ const Link = styled(NavLink)`
   padding: 0 32px;
   color: white;
 `;
-export { Container, Wrapper, Section, Logo, Link };
+export { Container, Wrapper, Section, Logo, Link, ContainerMain };
