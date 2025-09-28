@@ -1,10 +1,12 @@
-
-import { Container } from './style'
+import { Input } from "../generics";
+import { Container } from "./style";
 
 function Home() {
   return (
-    <Container>Home</Container>
-  )
+    <Container>
+      <Input width={200} />
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

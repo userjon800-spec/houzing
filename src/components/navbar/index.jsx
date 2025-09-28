@@ -1,4 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
+import Button from "../generics/button";
 import {
   Container,
   ContainerMain,
@@ -20,8 +21,8 @@ function Navbar() {
             <h3>Houzing</h3>
           </Section>
           <Section>
-            {navbar.map(({ title, path }, i) => {
-              return (
+            {navbar.map(({ title, path,hidden }, i) => {
+              return !hidden && (
                 <Link
                   className={({ isActive }) => isActive && "active"}
                   to={path}
@@ -33,7 +34,9 @@ function Navbar() {
             })}
           </Section>
           <Section>
-            <button>Sig in</button>
+            <Button onClick={() => navigate("/signin")} type={"dark"}>
+              Log in
+            </Button>
           </Section>
         </Wrapper>
       </ContainerMain>
