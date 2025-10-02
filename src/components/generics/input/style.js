@@ -13,7 +13,7 @@ import styled from "styled-components";
 //         border: "none",
 //         color: "white",
 //       };
-//       case "light": 
+//       case "light":
 //       return {
 //         background: "#ffffff",
 //         border: "1px solid #e6e9ec",
@@ -35,5 +35,19 @@ let Container = styled.input`
   height: ${({ heigth }) => (heigth ? heigth + "px" : "44px")};
   width: ${({ width }) => (width ? width + "px" : "100%")};
   border: 1px solid #e6e9ec;
+  padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
 `;
-export { Container };
+
+let Wrapper = styled.div`
+  position: relative;
+  width: ${({ width }) => (width ? width + "px" : "100%")};
+  display: flex;
+  align-items: center;
+`;
+let Icon = styled.div`
+  position: absolute;
+  transform: translate(-50%,50%);
+  left: 10px;
+`;
+
+export { Container, Wrapper, Icon };

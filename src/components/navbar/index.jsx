@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import Button from "../generics/button";
+import {Button} from "../generics";
 import {
   Container,
   ContainerMain,
@@ -10,6 +10,7 @@ import {
 } from "./style";
 import logo from "../../assets/img/logo.png";
 import { navbar } from "../../utils/navbar";
+import Filter from "../filter";
 function Navbar() {
   const navigate = useNavigate();
   return (
@@ -40,6 +41,7 @@ function Navbar() {
           </Section>
         </Wrapper>
       </ContainerMain>
+      <Filter />
       <Outlet />
     </Container>
   );

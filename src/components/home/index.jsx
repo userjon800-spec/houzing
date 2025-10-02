@@ -4,7 +4,7 @@ import { Container } from "./style";
 function Home() {
   return (
     <Container>
-      <Input width={200} />
+      Home
     </Container>
   );
 }

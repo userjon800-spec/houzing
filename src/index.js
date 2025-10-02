@@ -5,7 +5,7 @@ import RootContext from "./context/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <RootContext >
+  <RootContext>
     <Root />
   </RootContext>
 );
