@@ -1,10 +1,9 @@
-import { Input } from "../generics";
 import { Container } from "./style";
-
+import GenCarousel from "../carousel";
 function Home() {
   return (
     <Container>
-      Home
+      <GenCarousel />
     </Container>
   );
 }

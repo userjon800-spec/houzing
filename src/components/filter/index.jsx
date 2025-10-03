@@ -13,7 +13,7 @@ function Filter() {
   let sortRef = useRef(null);
   let minPriceRef = useRef(null);
   let maxPriceRef = useRef(null);
-  let menu = (
+  let menus = (
     <MenuWrapper>
       <h1 className="subTitle">Address</h1>
       <Section>
@@ -42,11 +42,11 @@ function Filter() {
   return (
     <Container>
       <Input
-        prefix={<Icons.Houses />}
+        icon={<Icons.Qidir />}
         placeholder={"Enter an address, neighborhood, city, or ZIP code"}
       />
       <Dropdown
-        overlay={menu}
+        overlay={menus}
         placement="bottomRight"
         arrow={{ pointAtCenter: true }}
       >
@@ -63,5 +63,5 @@ function Filter() {
       </Button>
     </Container>
   );
-}
+} 
 export default Filter;
