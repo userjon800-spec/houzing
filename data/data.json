@@ -1,0 +1,867 @@
+{
+  "houses": [],
+  "categroy": [],
+  "getAll": [],
+  "list": [
+    {
+      "id": 630,
+      "name": "afeafd",
+      "description": "afeafdsf",
+      "user": {
+        "id": 59,
+        "first_name": "Hayotbek",
+        "last_name": "Yo'ldashev",
+        "email": "hayotbekyo'ldashev2@gmail.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 2,
+        "garage": 2,
+        "area": 2,
+        "beds": null,
+        "yearBuilt": null
+      },
+      "price": 123,
+      "salePrice": 154,
+      "location": {
+        "longitude": 69.46676846876865,
+        "latitude": 46.46765456465465
+      },
+      "address": "",
+      "city": "Tashkent",
+      "region": "",
+      "country": "Uzbekistan",
+      "zipCode": "string",
+      "attachments": [
+        {
+          "imgPath": "https://www.shutterstock.com/image-photo/spacious-contemporary-house-lush-greenery-600nw-2479089439.jpg"
+        }
+      ],
+      "category": null,
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 941,
+      "name": "Chiroyli uy",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "user": {
+        "id": 325,
+        "first_name": "Jamshid",
+        "last_name": "Yusupov",
+        "email": "jamshidYusupov@gmail.com"
+      },
+      "houseDetails": {
+        "room": 12,
+        "bath": 4,
+        "garage": 2,
+        "area": 1200,
+        "beds": 5,
+        "yearBuilt": 2000
+      },
+      "price": 20000,
+      "salePrice": null,
+      "location": {
+        "longitude": 23.46676846876865,
+        "latitude": 16.46765456465465
+      },
+      "address": "Turon",
+      "city": "Nur-Sulton",
+      "region": "Bishkek",
+      "country": "Kazakstan",
+      "zipCode": "123123",
+      "attachments": [
+        {
+          "imgPath": "https://thumbs.dreamstime.com/b/cozy-house-beautiful-landscaping-sunny-day-home-exterior-75443602.jpg"
+        }
+      ],
+      "category": {
+        "name": "Cottage"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1001,
+      "name": "Sunset Villa",
+      "description": "Spacious villa with garden and terrace.",
+      "user": {
+        "id": 401,
+        "first_name": "Aziza",
+        "last_name": "Karimova",
+        "email": "aziza.karimova@example.com"
+      },
+      "houseDetails": {
+        "room": 5,
+        "bath": 3,
+        "garage": 1,
+        "area": 380,
+        "beds": 4,
+        "yearBuilt": 2015
+      },
+      "price": 450000,
+      "salePrice": 430000,
+      "location": {
+        "longitude": 24.912345,
+        "latitude": 60.123456
+      },
+      "address": "Sunset Boulevard 12",
+      "city": "Valeria",
+      "region": "Northshire",
+      "country": "Finland",
+      "zipCode": "00100",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1001/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Villa"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1002,
+      "name": "Green Cottage",
+      "description": "Cozy cottage near lake.",
+      "user": {
+        "id": 402,
+        "first_name": "Bek",
+        "last_name": "Sultonov",
+        "email": "bek.sultonov@example.com"
+      },
+      "houseDetails": {
+        "room": 3,
+        "bath": 1,
+        "garage": 0,
+        "area": 95,
+        "beds": 2,
+        "yearBuilt": 1998
+      },
+      "price": 85000,
+      "salePrice": null,
+      "location": {
+        "longitude": -73.56789,
+        "latitude": 45.678912
+      },
+      "address": "Lakeside 7",
+      "city": "Marina",
+      "region": "Lakeshore",
+      "country": "Canada",
+      "zipCode": "H2X1Y4",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1002/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Cottage"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1003,
+      "name": "Downtown Flat",
+      "description": "Modern apartment in city center.",
+      "user": {
+        "id": 403,
+        "first_name": "Nilufar",
+        "last_name": "Rahmonova",
+        "email": "nilufar.rahmonova@example.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 1,
+        "garage": 0,
+        "area": 72,
+        "beds": 1,
+        "yearBuilt": 2019
+      },
+      "price": 120000,
+      "salePrice": 115000,
+      "location": {
+        "longitude": 2.352222,
+        "latitude": 48.856613
+      },
+      "address": "Rue de Centre 45",
+      "city": "Paris",
+      "region": "Île-de-France",
+      "country": "France",
+      "zipCode": "75001",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1003/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Apartment"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1004,
+      "name": "Seaside Bungalow",
+      "description": "Bungalow with sea view and palm garden.",
+      "user": {
+        "id": 404,
+        "first_name": "Shahzoda",
+        "last_name": "Iskandarova",
+        "email": "shahzoda.iskandarova@example.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 2,
+        "garage": 1,
+        "area": 210,
+        "beds": 3,
+        "yearBuilt": 2008
+      },
+      "price": 320000,
+      "salePrice": 299000,
+      "location": {
+        "longitude": 34.123456,
+        "latitude": 31.765432
+      },
+      "address": "Coastline 2",
+      "city": "Marbella",
+      "region": "Andalusia",
+      "country": "Spain",
+      "zipCode": "29600",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1004/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Bungalow"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1005,
+      "name": "Mountain Cabin",
+      "description": "Rustic cabin ideal for weekend getaways.",
+      "user": {
+        "id": 405,
+        "first_name": "Jasur",
+        "last_name": "Mamatov",
+        "email": "jasur.mamatov@example.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 1,
+        "garage": 0,
+        "area": 60,
+        "beds": 2,
+        "yearBuilt": 1990
+      },
+      "price": 56000,
+      "salePrice": null,
+      "location": {
+        "longitude": -106.34567,
+        "latitude": 39.12345
+      },
+      "address": "Hightrail 9",
+      "city": "Aspen",
+      "region": "Colorado",
+      "country": "USA",
+      "zipCode": "81611",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1005/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Cabin"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1006,
+      "name": "Urban Studio",
+      "description": "Compact studio perfect for singles.",
+      "user": {
+        "id": 406,
+        "first_name": "Dilbar",
+        "last_name": "Nazarova",
+        "email": "dilbar.nazarova@example.com"
+      },
+      "houseDetails": {
+        "room": 1,
+        "bath": 1,
+        "garage": 0,
+        "area": 35,
+        "beds": 1,
+        "yearBuilt": 2021
+      },
+      "price": 65000,
+      "salePrice": 62000,
+      "location": {
+        "longitude": 139.691711,
+        "latitude": 35.689487
+      },
+      "address": "Shinjuku 3-12",
+      "city": "Tokyo",
+      "region": "Kantō",
+      "country": "Japan",
+      "zipCode": "160-0022",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1006/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Studio"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1007,
+      "name": "Family Home",
+      "description": "Nice family house with backyard and play area.",
+      "user": {
+        "id": 407,
+        "first_name": "Rustam",
+        "last_name": "Eshonov",
+        "email": "rustam.esheonov@example.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 2,
+        "garage": 2,
+        "area": 250,
+        "beds": 3,
+        "yearBuilt": 2005
+      },
+      "price": 210000,
+      "salePrice": 200000,
+      "location": {
+        "longitude": 151.2099,
+        "latitude": -33.865143
+      },
+      "address": "Harbour St 18",
+      "city": "Sydney",
+      "region": "New South Wales",
+      "country": "Australia",
+      "zipCode": "2000",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1007/1200/800"
+        }
+      ],
+      "category": {
+        "name": "House"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1008,
+      "name": "Loft Space",
+      "description": "Industrial loft with high ceilings.",
+      "user": {
+        "id": 408,
+        "first_name": "Madina",
+        "last_name": "Qodirova",
+        "email": "madina.qodirova@example.com"
+      },
+      "houseDetails": {
+        "room": 1,
+        "bath": 1,
+        "garage": 0,
+        "area": 110,
+        "beds": 1,
+        "yearBuilt": 2010
+      },
+      "price": 140000,
+      "salePrice": null,
+      "location": {
+        "longitude": -0.127758,
+        "latitude": 51.507351
+      },
+      "address": "Baker Street 221B",
+      "city": "London",
+      "region": "Greater London",
+      "country": "United Kingdom",
+      "zipCode": "NW1",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1008/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Loft"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1009,
+      "name": "Eco Home",
+      "description": "Energy-efficient home with solar panels.",
+      "user": {
+        "id": 409,
+        "first_name": "Sardor",
+        "last_name": "Olimov",
+        "email": "sardor.olimov@example.com"
+      },
+      "houseDetails": {
+        "room": 3,
+        "bath": 2,
+        "garage": 1,
+        "area": 160,
+        "beds": 3,
+        "yearBuilt": 2018
+      },
+      "price": 180000,
+      "salePrice": 175000,
+      "location": {
+        "longitude": 11.255814,
+        "latitude": 43.76956
+      },
+      "address": "Via Verde 4",
+      "city": "Florence",
+      "region": "Tuscany",
+      "country": "Italy",
+      "zipCode": "50122",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1009/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Eco Home"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1010,
+      "name": "Historic Manor",
+      "description": "Renovated manor with original features.",
+      "user": {
+        "id": 410,
+        "first_name": "Nilufar",
+        "last_name": "Oybekova",
+        "email": "nilufar.oybekova@example.com"
+      },
+      "houseDetails": {
+        "room": 8,
+        "bath": 5,
+        "garage": 3,
+        "area": 1250,
+        "beds": 6,
+        "yearBuilt": 1887
+      },
+      "price": 1250000,
+      "salePrice": null,
+      "location": {
+        "longitude": -3.188267,
+        "latitude": 55.953251
+      },
+      "address": "Old Lane 1",
+      "city": "Edinburgh",
+      "region": "Lothian",
+      "country": "Scotland",
+      "zipCode": "EH1",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1010/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Manor"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1011,
+      "name": "Riverside Terrace",
+      "description": "Terraced house overlooking river.",
+      "user": {
+        "id": 411,
+        "first_name": "Umar",
+        "last_name": "Azimov",
+        "email": "umar.azimov@example.com"
+      },
+      "houseDetails": {
+        "room": 3,
+        "bath": 2,
+        "garage": 1,
+        "area": 140,
+        "beds": 3,
+        "yearBuilt": 2003
+      },
+      "price": 155000,
+      "salePrice": 150000,
+      "location": {
+        "longitude": 12.496366,
+        "latitude": 41.902782
+      },
+      "address": "Riverside 10",
+      "city": "Rome",
+      "region": "Lazio",
+      "country": "Italy",
+      "zipCode": "00100",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1011/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Terrace"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1012,
+      "name": "Desert Retreat",
+      "description": "Minimalist house in desert surroundings.",
+      "user": {
+        "id": 412,
+        "first_name": "Laylo",
+        "last_name": "Qodirova",
+        "email": "laylo.qodirova@example.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 1,
+        "garage": 0,
+        "area": 85,
+        "beds": 2,
+        "yearBuilt": 2012
+      },
+      "price": 98000,
+      "salePrice": null,
+      "location": {
+        "longitude": 55.270783,
+        "latitude": 25.204849
+      },
+      "address": "Sand Dune 5",
+      "city": "Dubai",
+      "region": "Dubai",
+      "country": "UAE",
+      "zipCode": "00000",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1012/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Retreat"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1013,
+      "name": "Ranch Estate",
+      "description": "Large estate with open fields and stables.",
+      "user": {
+        "id": 413,
+        "first_name": "Komil",
+        "last_name": "Toshpulatov",
+        "email": "komil.toshpulatov@example.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 4,
+        "garage": 4,
+        "area": 3200,
+        "beds": 5,
+        "yearBuilt": 1995
+      },
+      "price": 780000,
+      "salePrice": 750000,
+      "location": {
+        "longitude": -99.133208,
+        "latitude": 19.432608
+      },
+      "address": "Ranch Road 77",
+      "city": "Querétaro",
+      "region": "Querétaro",
+      "country": "Mexico",
+      "zipCode": "76000",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1013/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Estate"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1014,
+      "name": "Compact Condo",
+      "description": "Affordable condo near public transport.",
+      "user": {
+        "id": 414,
+        "first_name": "Zebo",
+        "last_name": "Murodova",
+        "email": "zebo.murodova@example.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 1,
+        "garage": 0,
+        "area": 60,
+        "beds": 1,
+        "yearBuilt": 2016
+      },
+      "price": 72000,
+      "salePrice": null,
+      "location": {
+        "longitude": 103.851959,
+        "latitude": 1.29027
+      },
+      "address": "Orchard 9",
+      "city": "Singapore",
+      "region": "Central",
+      "country": "Singapore",
+      "zipCode": "238839",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1014/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Condo"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1015,
+      "name": "Modern Duplex",
+      "description": "Two-level duplex with rooftop access.",
+      "user": {
+        "id": 415,
+        "first_name": "Olim",
+        "last_name": "Musayev",
+        "email": "olim.musayev@example.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 3,
+        "garage": 1,
+        "area": 280,
+        "beds": 4,
+        "yearBuilt": 2017
+      },
+      "price": 345000,
+      "salePrice": 330000,
+      "location": {
+        "longitude": 18.424055,
+        "latitude": -33.924869
+      },
+      "address": "Harbour View 3",
+      "city": "Cape Town",
+      "region": "Western Cape",
+      "country": "South Africa",
+      "zipCode": "8001",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1015/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Duplex"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1016,
+      "name": "Island Cottage",
+      "description": "Quiet cottage on a small island.",
+      "user": {
+        "id": 416,
+        "first_name": "Gulnora",
+        "last_name": "Raxmonova",
+        "email": "gulnora.raxmonova@example.com"
+      },
+      "houseDetails": {
+        "room": 2,
+        "bath": 1,
+        "garage": 0,
+        "area": 70,
+        "beds": 2,
+        "yearBuilt": 2001
+      },
+      "price": 129000,
+      "salePrice": null,
+      "location": {
+        "longitude": -157.858333,
+        "latitude": 21.306944
+      },
+      "address": "Palm Way 1",
+      "city": "Honolulu",
+      "region": "Oahu",
+      "country": "USA",
+      "zipCode": "96815",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1016/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Cottage"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1017,
+      "name": "Skylight Residence",
+      "description": "House with large skylights and natural lighting.",
+      "user": {
+        "id": 417,
+        "first_name": "Azim",
+        "last_name": "Qodirov",
+        "email": "azim.qodirov@example.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 3,
+        "garage": 2,
+        "area": 310,
+        "beds": 4,
+        "yearBuilt": 2014
+      },
+      "price": 410000,
+      "salePrice": 395000,
+      "location": {
+        "longitude": 37.6173,
+        "latitude": 55.755826
+      },
+      "address": "Red Square 5",
+      "city": "Moscow",
+      "region": "Central",
+      "country": "Russia",
+      "zipCode": "101000",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1017/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Residence"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1018,
+      "name": "Glass House",
+      "description": "Architectural glass house with panoramic views.",
+      "user": {
+        "id": 418,
+        "first_name": "Murod",
+        "last_name": "Jalolov",
+        "email": "murod.jalolov@example.com"
+      },
+      "houseDetails": {
+        "room": 6,
+        "bath": 5,
+        "garage": 3,
+        "area": 900,
+        "beds": 6,
+        "yearBuilt": 2020
+      },
+      "price": 2200000,
+      "salePrice": null,
+      "location": {
+        "longitude": -118.243683,
+        "latitude": 34.052235
+      },
+      "address": "Sunrise Drive 88",
+      "city": "Los Angeles",
+      "region": "California",
+      "country": "USA",
+      "zipCode": "90001",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1018/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Modern"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    },
+    {
+      "id": 1019,
+      "name": "Forest Lodge",
+      "description": "Lodge immersed in forest with hiking access.",
+      "user": {
+        "id": 419,
+        "first_name": "Islom",
+        "last_name": "Ergashev",
+        "email": "islom.ergashev@example.com"
+      },
+      "houseDetails": {
+        "room": 4,
+        "bath": 3,
+        "garage": 1,
+        "area": 260,
+        "beds": 4,
+        "yearBuilt": 2007
+      },
+      "price": 195000,
+      "salePrice": 185000,
+      "location": {
+        "longitude": 9.082,
+        "latitude": 8.6753
+      },
+      "address": "Old Forest 12",
+      "city": "Ibadan",
+      "region": "Oyo",
+      "country": "Nigeria",
+      "zipCode": "200001",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/seed/house1019/1200/800"
+        }
+      ],
+      "category": {
+        "name": "Lodge"
+      },
+      "status": true,
+      "houseComponentsDto": null,
+      "houseAmenitiesto": null
+    }
+  ],
+  "me": []
+}

@@ -1,11 +1,12 @@
 import { Container } from "./style";
 import GenCarousel from "../carousel";
-import HouseCard from "../HouseCard";
+import Properties from "../properties";
+
 function Home() {
   return (
     <Container>
       <GenCarousel />
-      <HouseCard />
+      <Properties />
     </Container>
   );
 }

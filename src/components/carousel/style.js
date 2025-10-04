@@ -26,6 +26,7 @@ let Chewron = styled(arrow)`
 let Img = styled.img`
   width: 100%;
   max-height: 571px;
+  height: 100%;
   object-fit: cover;
 `;
 

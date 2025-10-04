@@ -6,14 +6,26 @@ import { ReactComponent as ft } from "../../assets/icon/lineyka.svg";
 import { ReactComponent as love } from "../../assets/icon/love.svg";
 import { ReactComponent as keng } from "../../assets/icon/keng.svg";
 let Container = styled.div`
-  width: 380px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 330px;
+  margin: ${({ gap }) => {
+    return gap && `0 ${gap}px`;
+  }};
   height: 430px;
-  margin: 100px;
-  box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.14);
+  background: white;
+  border: 1px solid #e6e9ec;
+  :hover {
+    filter: drop-shadow(0px 20px 38px rgba(0, 0, 0, 0.06))
+      drop-shadow(0px 7px 46px rgba(0, 0, 0, 0.06))
+      drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.06));
+  }
+  cursor: pointer;
 `;
 const Img = styled.img`
   width: 100%;
   max-height: 220px;
+  min-height: 220px;
 `;
 
 let Content = styled.div`
@@ -44,10 +56,13 @@ Icons.Love = styled(love)`
   width: 27px;
   height: 27px;
   padding: 6px;
-  background: #f6f8f9;
+  background: ${({ favorite }) => (favorite ? "red" : "#f6f8f9")};
   border-radius: 50%;
   margin-left: 20px;
   cursor: pointer;
+  & path {
+    fill: ${({ favorite }) => favorite && "white"};
+  }
   :active {
     transform: scale(0.9);
   }

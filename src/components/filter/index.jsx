@@ -3,7 +3,13 @@ import { Button } from "../generics";
 import { useRef } from "react";
 import { Input } from "../generics";
 import { Container, Icons, MenuWrapper, Section } from "./styled";
+import { uzeReplace } from "../../hooks/useReplace";
+import { useLocation, useNavigate } from "react-router-dom";
+import { useSearch } from "../../hooks/useSearch";
 function Filter() {
+  let location = useLocation().pathname;
+  let navigate = useNavigate();
+  let query = useSearch();
   let countryRef = useRef(null);
   let regionRef = useRef(null);
   let cityRef = useRef(null);
@@ -13,14 +19,41 @@ function Filter() {
   let sortRef = useRef(null);
   let minPriceRef = useRef(null);
   let maxPriceRef = useRef(null);
+  let onChanges = ({ target: { name, value } }) => {
+    navigate(`${location}${uzeReplace(name, value)}`);
+  };
   let menus = (
     <MenuWrapper>
       <h1 className="subTitle">Address</h1>
       <Section>
-        <Input placeholder={"Country"} ref={countryRef} />
-        <Input placeholder={"Region"} ref={regionRef} />
-        <Input placeholder={"City"} ref={cityRef} />
-        <Input placeholder={"Zip Code"} ref={zipRef} />
+        <Input
+          defaultValue={query.get("country")}
+          name="country"
+          onChange={onChanges}
+          placeholder={"Country"}
+          ref={countryRef}
+        />
+        <Input
+          defaultValue={query.get("region")}
+          name="region"
+          onChange={onChanges}
+          placeholder={"Region"}
+          ref={regionRef}
+        />
+        <Input
+          defaultValue={query.get("city")}
+          name="city"
+          onChange={onChanges}
+          placeholder={"City"}
+          ref={cityRef}
+        />
+        <Input
+          defaultValue={query.get("zipCode")}
+          name="zipCode"
+          onChange={onChanges}
+          placeholder={"Zip Code"}
+          ref={zipRef}
+        />
       </Section>
       <h1 className="subTitle">Apartment info</h1>
       <Section>
@@ -49,6 +82,7 @@ function Filter() {
         overlay={menus}
         placement="bottomRight"
         arrow={{ pointAtCenter: true }}
+        trigger={"click"}
       >
         <div>
           <Button type="light">
@@ -63,5 +97,5 @@ function Filter() {
       </Button>
     </Container>
   );
-} 
+}
 export default Filter;
