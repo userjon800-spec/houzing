@@ -5,10 +5,12 @@ import { ReactComponent as houses } from "../../assets/icon/houses.svg";
 
 let Container = styled.div`
   display: flex;
-  padding: var(--padding);
   padding-top: 10px;
   padding-bottom: 10px;
   gap: 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
 `;
 
 let Icons = styled.div``;

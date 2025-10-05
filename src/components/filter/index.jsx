@@ -42,7 +42,7 @@ function Filter() {
         />
         <Input
           defaultValue={query.get("city")}
-          name="city"
+          name="address"
           onChange={onChanges}
           placeholder={"City"}
           ref={cityRef}

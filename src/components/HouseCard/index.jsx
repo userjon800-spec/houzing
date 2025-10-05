@@ -11,6 +11,7 @@ function HouseCard({ data }) {
     houseDetails,
     salePrice,
     price,
+    category
   } = data;
   return (
     <Container>
@@ -24,7 +25,7 @@ function HouseCard({ data }) {
         <div className="subTitle inline">
           {city},{country}, {description}{" "}
         </div>
-        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"}</div>
+        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"} - {category?.name|| "Category"} </div>
         <Details>
           <Details.Item>
             {" "}

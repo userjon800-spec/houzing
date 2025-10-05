@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
   width: 100%;
   height: 100vh;
@@ -13,7 +14,7 @@ body {
   --colorPrimary: #0d263b;
   --colorSecondary: #696969;
   --backgroundPrimary: #0061df;
-  --padding: 0 130px; 
+  --padding: 0 130px;
 }
 
 .subTitle {
@@ -46,4 +47,8 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
 }

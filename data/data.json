@@ -1,6 +1,39 @@
 {
   "houses": [],
-  "categroy": [],
+  "categroy": [
+    {
+      "id": 2,
+      "createdAt": "2022-02-25T15:53:09.112Z",
+      "updateAt": null,
+      "createdBy": null,
+      "updateBy": null,
+      "name": "Villa"
+    },
+    {
+      "id": 4,
+      "createdAt": "2022-02-25T15:53:29.910Z",
+      "updateAt": null,
+      "createdBy": null,
+      "updateBy": null,
+      "name": "Cottage"
+    },
+    {
+      "id": 1,
+      "createdAt": "2022-02-25T15:53:59.468Z",
+      "updateAt": null,
+      "createdBy": null,
+      "updateBy": null,
+      "name": "dom"
+    },
+    {
+      "id": 65,
+      "createdAt": "2022-08-25T11:41:06.486Z",
+      "updateAt": null,
+      "createdBy": null,
+      "updateBy": null,
+      "name": "Office"
+    }
+  ],
   "getAll": [],
   "list": [
     {
@@ -37,7 +70,9 @@
           "imgPath": "https://www.shutterstock.com/image-photo/spacious-contemporary-house-lush-greenery-600nw-2479089439.jpg"
         }
       ],
-      "category": null,
+      "category": {
+        "name": "Office"
+      },
       "status": true,
       "houseComponentsDto": null,
       "houseAmenitiesto": null
@@ -241,7 +276,7 @@
         }
       ],
       "category": {
-        "name": "Bungalow"
+        "name": "dom"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -282,7 +317,7 @@
         }
       ],
       "category": {
-        "name": "Cabin"
+        "name": "Office"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -323,7 +358,7 @@
         }
       ],
       "category": {
-        "name": "Studio"
+        "name": "Office"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -364,7 +399,7 @@
         }
       ],
       "category": {
-        "name": "House"
+        "name": "Villa"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -405,7 +440,7 @@
         }
       ],
       "category": {
-        "name": "Loft"
+        "name": "Cottage"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -446,7 +481,7 @@
         }
       ],
       "category": {
-        "name": "Eco Home"
+        "name": "dom"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -487,7 +522,7 @@
         }
       ],
       "category": {
-        "name": "Manor"
+        "name": "dom"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -528,7 +563,7 @@
         }
       ],
       "category": {
-        "name": "Terrace"
+        "name": "Cottage"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -569,7 +604,7 @@
         }
       ],
       "category": {
-        "name": "Retreat"
+        "name": "Villa"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -610,7 +645,7 @@
         }
       ],
       "category": {
-        "name": "Estate"
+        "name": "Office"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -651,7 +686,7 @@
         }
       ],
       "category": {
-        "name": "Condo"
+        "name": "Villa"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -692,7 +727,7 @@
         }
       ],
       "category": {
-        "name": "Duplex"
+        "name": "Cottage"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -774,7 +809,7 @@
         }
       ],
       "category": {
-        "name": "Residence"
+        "name": "Office"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -815,7 +850,7 @@
         }
       ],
       "category": {
-        "name": "Modern"
+        "name": "dom"
       },
       "status": true,
       "houseComponentsDto": null,
@@ -856,7 +891,7 @@
         }
       ],
       "category": {
-        "name": "Lodge"
+        "name": "Villa"
       },
       "status": true,
       "houseComponentsDto": null,

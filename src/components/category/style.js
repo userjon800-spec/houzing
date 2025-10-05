@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { ReactComponent as arrow } from "../../assets/icon/chewron.svg";
 let Container = styled.div`
-  height: 575px;
+  padding: 96px 0px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
   position: relative;
 `;
 let Chewron = styled(arrow)`
@@ -11,10 +14,10 @@ let Chewron = styled(arrow)`
   position: absolute;
   padding: 18px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.19);
+  background: rgba(6, 6, 6, 0.3);
   transform: ${({ left }) => (!left ? "rotate(180deg)" : "rotate(0deg)")};
-  right: ${({ left }) => left && "20px"};
-  left: ${({ left }) => !left && "20px"};
+  right: ${({ left }) => left && "-30px"};
+  left: ${({ left }) => !left && "-30px"};
   cursor: pointer;
   z-index: 5;
   color: white;

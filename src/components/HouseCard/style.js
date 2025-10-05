@@ -39,6 +39,7 @@ let Content = styled.div`
 
 let Details = styled.div`
   display: flex;
+  margin-top: 8px;
   justify-content: space-between;
 `;
 Details.Item = styled.div`

@@ -1,12 +1,12 @@
 import { Container } from "./style";
-import GenCarousel from "../carousel";
-import Properties from "../properties";
+import GenCarousel from "../carousel/index";
+import Category from "../category";
 
 function Home() {
   return (
     <Container>
       <GenCarousel />
-      <Properties />
+      <Category />
     </Container>
   );
 }
