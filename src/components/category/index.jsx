@@ -17,9 +17,10 @@ function Category() {
     speed: 500,
     appendDots: (dots)=> <h1> {dots} </h1>,
   };
+  
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`${url}categroy`)
+    fetch(`${url}category`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
@@ -32,7 +33,7 @@ function Category() {
       <Slider  {...settings}>
         {data &&
           data.map((val) => {
-            return <CategoryCard onClick={()=> navigate(`/properties?category=${val.name}`)} data={val} />;
+            return <CategoryCard onClick={()=> navigate(`/properties?category=${val.id}`)} data={val} />;
           })}
       </Slider>
     </Container>

@@ -19,13 +19,17 @@ function HouseCard({ data }) {
         src={
           attachments[0]?.imgPath ??
           "https://t3.ftcdn.net/jpg/14/38/90/96/360_F_1438909678_pEFxCNIuz0SQZ4ZcEwXkPqByYVbZgJVk.jpg"
-        } alt="rasm"
+        }
+        alt="rasm"
       />
       <Content>
         <div className="subTitle inline">
           {city},{country}, {description}{" "}
+        </div> 
+        <div className="info">
+          {address || "Quincy St, Brooklyn, NY, USA"} -{" "}
+          {category?.name || "Category"} - {houseDetails.room || 0} rooms{" "}
         </div>
-        <div className="info">{address || "Quincy St, Brooklyn, NY, USA"} - {category?.name|| "Category"} </div>
         <Details>
           <Details.Item>
             {" "}

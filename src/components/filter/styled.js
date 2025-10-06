@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as search } from "../../assets/icon/search.svg";
 import { ReactComponent as filter } from "../../assets/icon/filter.svg";
 import { ReactComponent as houses } from "../../assets/icon/houses.svg";
-
+import { Select } from "antd";
 let Container = styled.div`
   display: flex;
   padding-top: 10px;
@@ -35,4 +35,13 @@ let Section = styled.div`
   gap: 20px;
 `;
 
-export { Container, Icons, MenuWrapper, Section };
+let SelectAnt = styled(Select)`
+  min-width: 130px;
+  width: 100%;
+  max-width: 160px;
+  .ant-select-selector {
+    height: 44px !important;
+  }
+`;
+
+export { Container, Icons, MenuWrapper, Section, SelectAnt };

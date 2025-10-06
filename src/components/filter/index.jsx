@@ -1,13 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Dropdown } from "antd";
 import { Button } from "../generics";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Input } from "../generics";
-import { Container, Icons, MenuWrapper, Section } from "./styled";
+import { Container, Icons, MenuWrapper, Section, SelectAnt } from "./styled";
 import { uzeReplace } from "../../hooks/useReplace";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSearch } from "../../hooks/useSearch";
 function Filter() {
   let location = useLocation().pathname;
+  let { REACT_APP_BASE_URL: url } = process.env;
+  const [data, setData] = useState([]);
+  const [value, setValue] = useState("Select Category");
   let navigate = useNavigate();
   let query = useSearch();
   let countryRef = useRef(null);
@@ -15,12 +19,30 @@ function Filter() {
   let cityRef = useRef(null);
   let zipRef = useRef(null);
   let roomsRef = useRef(null);
-  let sizeRef = useRef(null);
-  let sortRef = useRef(null);
   let minPriceRef = useRef(null);
   let maxPriceRef = useRef(null);
+  let onCategory = (id) => {
+    navigate(`/properties${uzeReplace("category", id)}`);
+  };
   let onChanges = ({ target: { name, value } }) => {
-    navigate(`${location}${uzeReplace(name, value)}`);
+    navigate(`/properties${uzeReplace(name, value)}`);
+  };
+  
+  useEffect(() => {
+    fetch(`${url}category`)
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data || []);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+  useEffect(() => {
+    let [d] = data?.filter((ctg) => ctg.id === Number(query.get("category")));
+    d?.name && setValue(d?.name);
+    !query.get("category") && setValue("Select Category")
+  }, [location?.search, data]);
+  const onChangeSort = (sort) => {
+    navigate(`/properties${uzeReplace("sort", sort)}`);
   };
   let menus = (
     <MenuWrapper>
@@ -57,14 +79,34 @@ function Filter() {
       </Section>
       <h1 className="subTitle">Apartment info</h1>
       <Section>
-        <Input placeholder={"Rooms"} ref={roomsRef} />
-        <Input placeholder={"Size"} ref={sizeRef} />
-        <Input placeholder={"Sort"} ref={sortRef} />
+        <Input name="room" onChange={onChanges} placeholder={"Rooms"} ref={roomsRef} />
+        <SelectAnt
+          defaultValue={query.get("sort") || "Select Sort"}
+          onChange={onChangeSort}
+        >
+          <SelectAnt.Option value={""}>Select Sort</SelectAnt.Option>
+          <SelectAnt.Option value={"asc"}>O'suvchi</SelectAnt.Option>
+          <SelectAnt.Option value={"desc"}>Kamayuvchi</SelectAnt.Option>
+        </SelectAnt>
+        {/* mana */}
+        <SelectAnt value={value} size="large" onChange={onCategory}>
+          {/* <SelectAnt.Option value={"Select Category"}>
+            Select Category
+          </SelectAnt.Option> */}
+          {data &&
+            data.map((val) => {
+              return (
+                <SelectAnt.Option key={val.id} value={val.id}>
+                  {val.name}{" "}
+                </SelectAnt.Option>
+              );
+            })}
+        </SelectAnt>
       </Section>
       <h1 className="subTitle">Price</h1>
       <Section>
-        <Input placeholder={"Min pirce"} ref={minPriceRef} />
-        <Input placeholder={"Max price"} ref={maxPriceRef} />
+        <Input onChange={onChanges} name="price" placeholder={"Min pirce"} ref={minPriceRef} />
+        <Input onChange={onChanges} name="salePrice" placeholder={"Max price"} ref={maxPriceRef} />
       </Section>
       <Section footer>
         <Button type="light">Cancel</Button>

@@ -1,6 +1,6 @@
 {
   "houses": [],
-  "categroy": [
+  "category": [
     {
       "id": 2,
       "createdAt": "2022-02-25T15:53:09.112Z",
@@ -34,7 +34,7 @@
       "name": "Office"
     }
   ],
-  "getAll": [],
+  "getAll": [], 
   "list": [
     {
       "id": 630,
@@ -235,7 +235,7 @@
         }
       ],
       "category": {
-        "name": "Apartment"
+        "name": "Villa"
       },
       "status": true,
       "houseComponentsDto": null,
