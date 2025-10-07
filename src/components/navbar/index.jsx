@@ -11,6 +11,7 @@ import {
 import logo from "../../assets/img/logo.png";
 import { navbar } from "../../utils/navbar";
 import Filter from "../filter";
+import Footer from "../footer";
 function Navbar() {
   const navigate = useNavigate();
   return (
@@ -43,6 +44,7 @@ function Navbar() {
       </ContainerMain>
       <Filter />
       <Outlet />
+      <Footer />
     </Container>
   );
 }

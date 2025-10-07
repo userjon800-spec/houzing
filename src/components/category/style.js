@@ -5,6 +5,7 @@ let Container = styled.div`
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
+  margin-top: 100px;
   position: relative;
 `;
 let Chewron = styled(arrow)`
@@ -32,7 +33,14 @@ let Img = styled.img`
   height: 100%;
   object-fit: cover;
 `;
-
+let Wrap = styled.div`
+  display: flex;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+`;
 let Blur = styled.div`
   position: absolute;
   top: 0;
@@ -78,4 +86,4 @@ Content.Price = styled.div`
   line-height: 36px;
   letter-spacing: -0.02em;
 `;
-export { Container, Chewron, Img, Blur, Content };
+export { Container, Chewron, Img, Blur, Content, Wrap };

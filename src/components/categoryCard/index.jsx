@@ -1,5 +1,5 @@
 import { Blur, Container, Content, Img } from "./style";
-import house5 from "../../assets/img/home5.jpg";
+import house5 from "../../assets/img/home6.jpg";
 function CategoryCard({ data, onClick }) {
   if (!data) return null;
   let { name } = data;

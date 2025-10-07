@@ -1,6 +1,6 @@
 import { Container, Content, Details, Divider, Icons, Img } from "./style";
 
-function HouseCard({ data }) {
+function HouseCard({ data,gap }) {
   if (!data) return null;
   let {
     attachments,
@@ -14,7 +14,7 @@ function HouseCard({ data }) {
     category
   } = data;
   return (
-    <Container>
+    <Container gap={gap}>
       <Img
         src={
           attachments[0]?.imgPath ??
