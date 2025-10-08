@@ -1,5 +1,5 @@
 import styled from "styled-components";
-let getType = ({type}) => {
+let getType = ({ type }) => {
   switch (type) {
     case "dark":
       return {
@@ -13,12 +13,12 @@ let getType = ({type}) => {
         border: "none",
         color: "white",
       };
-      case "light": 
+    case "light":
       return {
         background: "#ffffff",
         border: "1px solid #e6e9ec",
         color: "#0d263b",
-      }
+      };
     default:
       return {
         background: "#0061df",
@@ -26,6 +26,11 @@ let getType = ({type}) => {
         color: "white",
       };
   }
+};
+let getWidth = ({ width }) => {
+  if (!width) return "130px";
+  else if (`${width}`.includes("%")) return "100%";
+  else return `${width}px`;
 };
 let Container = styled.button`
   display: flex;
@@ -36,9 +41,9 @@ let Container = styled.button`
   cursor: pointer;
   font-size: ${({ font }) => (font ? font + "px" : "14px")};
   height: ${({ heigth }) => (heigth ? heigth + "px" : "44px")};
-  width: ${({ width }) => (width ? width + "px" : "130px")};
+  width: ${getWidth};
   ${getType}
-  :active{
+  :active {
     opacity: 0.7;
   }
 `;

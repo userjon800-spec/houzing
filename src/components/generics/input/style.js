@@ -9,11 +9,13 @@ let Container = styled.input`
   width: ${({ width }) => (width ? width + "px" : "100%")};
   border: 1px solid #e6e9ec;
   padding-left: ${({ icon }) => (icon ? "35px" : "20px")};
-  ::first-letter{
+  ::first-letter {
     text-transform: uppercase;
   }
+  :focus {
+    border: 1px solid #0061df;
+  }
 `;
-
 
 let Wrapper = styled.div`
   position: relative;
@@ -23,7 +25,7 @@ let Wrapper = styled.div`
 `;
 let Icon = styled.div`
   position: absolute;
-  transform: translate(-50%,50%);
+  transform: translate(-50%, 50%);
   left: 10px;
 `;
 

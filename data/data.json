@@ -34,7 +34,7 @@
       "name": "Office"
     }
   ],
-  "getAll": [], 
+  "getAll": [],
   "list": [
     {
       "id": 630,
@@ -898,5 +898,6 @@
       "houseAmenitiesto": null
     }
   ],
-  "me": []
+  "me": [],
+  "login": []
 }

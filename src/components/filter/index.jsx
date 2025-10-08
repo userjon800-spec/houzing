@@ -4,7 +4,7 @@ import { Button } from "../generics";
 import { useEffect, useRef, useState } from "react";
 import { Input } from "../generics";
 import { Container, Icons, MenuWrapper, Section, SelectAnt } from "./styled";
-import { uzeReplace } from "../../hooks/useReplace";
+import { uzeReplace } from "../../hooks/uzeReplace";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSearch } from "../../hooks/useSearch";
 function Filter() {

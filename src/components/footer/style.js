@@ -7,7 +7,6 @@ let Container = styled.div`
   display: flex;
   justify-content: space-around;
   height: 417px;
-  margin-top: 45px;
   background: #0d263b;
 `;
 

@@ -1,6 +1,6 @@
 import { Container, Content, Details, Divider, Icons, Img } from "./style";
 
-function HouseCard({ data,gap }) {
+function HouseCard({ data, gap, onClick }) {
   if (!data) return null;
   let {
     attachments,
@@ -11,10 +11,10 @@ function HouseCard({ data,gap }) {
     houseDetails,
     salePrice,
     price,
-    category
+    category,
   } = data;
   return (
-    <Container gap={gap}>
+    <Container onClick={onClick} gap={gap}>
       <Img
         src={
           attachments[0]?.imgPath ??
@@ -25,7 +25,7 @@ function HouseCard({ data,gap }) {
       <Content>
         <div className="subTitle inline">
           {city},{country}, {description}{" "}
-        </div> 
+        </div>
         <div className="info">
           {address || "Quincy St, Brooklyn, NY, USA"} -{" "}
           {category?.name || "Category"} - {houseDetails.room || 0} rooms{" "}
