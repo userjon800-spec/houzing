@@ -18,7 +18,7 @@ function Navbar() {
     <Container>
       <ContainerMain>
         <Wrapper>
-          <Section onClick={() => navigate("/home")} logo>
+          <Section onClick={() => navigate("/home")} logo={"true"}>
             <Logo src={logo}></Logo>
             <h3>Houzing</h3>
           </Section>
@@ -44,7 +44,7 @@ function Navbar() {
       </ContainerMain>
       <Filter />
       <Outlet />
-      <Footer />
+      <Footer /> 
     </Container>
   );
 }

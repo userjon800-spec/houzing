@@ -54,12 +54,12 @@ function HouseCard({ data, gap, onClick }) {
         </Details>
       </Content>
       <Divider />
-      <Content footer>
-        <Details.Item footer>
+      <Content footer={"true"}>
+        <Details.Item footer={"true"}>
           <div className="info">${salePrice || 0}/mo</div>
           <div className="subTitle">${price || 0}/mo</div>
         </Details.Item>
-        <Details.Item row>
+        <Details.Item row={"true"}>
           <Icons.Keng />
           <Icons.Love />
         </Details.Item>

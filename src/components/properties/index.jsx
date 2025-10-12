@@ -1,12 +1,13 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Container } from "./style";
+import { Container, Content,Context } from "./style";
 import HouseCard from "../HouseCard/index";
-import { useLocation,useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 function Properties() {
   let { REACT_APP_BASE_URL: url } = process.env;
   const [data, setData] = useState([]);
-  let {search} = useLocation()
-  let navigate = useNavigate()
+  let { search } = useLocation();
+  let navigate = useNavigate();
   useEffect(() => {
     fetch(`${url}list${search}`)
       .then((res) => res.json())
@@ -14,17 +15,30 @@ function Properties() {
         setData(data);
       })
       .catch((error) => console.log(error));
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
-  let onSelect =(id)=>{
-    navigate(`/properties/${id}`)
-  }
+  let onSelect = (id) => {
+    navigate(`/properties/${id}`);
+  };
   return (
     <Container>
-      {data &&
+      <Content>
+        <h1 className="title">Properties</h1> <br />
+        <div className="info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        </div>
+      </Content>
+      <Context>
+        {data &&
         data?.map((val) => {
-          return <HouseCard onClick={()=> onSelect(val.id)} data={val} key={val.id} />;
+          return (
+            <HouseCard
+              onClick={() => onSelect(val.id)}
+              data={val}
+              key={val.id}
+            />
+          );
         })}
+      </Context>
     </Container>
   );
 }

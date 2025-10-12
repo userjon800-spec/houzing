@@ -2,7 +2,7 @@
   "houses": [],
   "category": [
     {
-      "id": 2,
+      "id": "2",
       "createdAt": "2022-02-25T15:53:09.112Z",
       "updateAt": null,
       "createdBy": null,
@@ -10,7 +10,7 @@
       "name": "Villa"
     },
     {
-      "id": 4,
+      "id": "4",
       "createdAt": "2022-02-25T15:53:29.910Z",
       "updateAt": null,
       "createdBy": null,
@@ -18,7 +18,7 @@
       "name": "Cottage"
     },
     {
-      "id": 1,
+      "id": "1",
       "createdAt": "2022-02-25T15:53:59.468Z",
       "updateAt": null,
       "createdBy": null,
@@ -26,7 +26,7 @@
       "name": "dom"
     },
     {
-      "id": 65,
+      "id": "65",
       "createdAt": "2022-08-25T11:41:06.486Z",
       "updateAt": null,
       "createdBy": null,
@@ -37,7 +37,7 @@
   "getAll": [],
   "list": [
     {
-      "id": 630,
+      "id": "630",
       "name": "afeafd",
       "description": "afeafdsf",
       "user": {
@@ -78,7 +78,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 941,
+      "id": "941",
       "name": "Chiroyli uy",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
       "user": {
@@ -119,7 +119,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1001,
+      "id": "1001",
       "name": "Sunset Villa",
       "description": "Spacious villa with garden and terrace.",
       "user": {
@@ -160,7 +160,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1002,
+      "id": "1002",
       "name": "Green Cottage",
       "description": "Cozy cottage near lake.",
       "user": {
@@ -201,7 +201,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1003,
+      "id": "1003",
       "name": "Downtown Flat",
       "description": "Modern apartment in city center.",
       "user": {
@@ -242,7 +242,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1004,
+      "id": "1004",
       "name": "Seaside Bungalow",
       "description": "Bungalow with sea view and palm garden.",
       "user": {
@@ -283,7 +283,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1005,
+      "id": "1005",
       "name": "Mountain Cabin",
       "description": "Rustic cabin ideal for weekend getaways.",
       "user": {
@@ -324,7 +324,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1006,
+      "id": "1006",
       "name": "Urban Studio",
       "description": "Compact studio perfect for singles.",
       "user": {
@@ -365,7 +365,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1007,
+      "id": "1007",
       "name": "Family Home",
       "description": "Nice family house with backyard and play area.",
       "user": {
@@ -406,7 +406,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1008,
+      "id": "1008",
       "name": "Loft Space",
       "description": "Industrial loft with high ceilings.",
       "user": {
@@ -447,7 +447,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1009,
+      "id": "1009",
       "name": "Eco Home",
       "description": "Energy-efficient home with solar panels.",
       "user": {
@@ -488,7 +488,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1010,
+      "id": "1010",
       "name": "Historic Manor",
       "description": "Renovated manor with original features.",
       "user": {
@@ -529,7 +529,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1011,
+      "id": "1011",
       "name": "Riverside Terrace",
       "description": "Terraced house overlooking river.",
       "user": {
@@ -570,7 +570,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1012,
+      "id": "1012",
       "name": "Desert Retreat",
       "description": "Minimalist house in desert surroundings.",
       "user": {
@@ -611,7 +611,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1013,
+      "id": "1013",
       "name": "Ranch Estate",
       "description": "Large estate with open fields and stables.",
       "user": {
@@ -652,7 +652,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1014,
+      "id": "1014",
       "name": "Compact Condo",
       "description": "Affordable condo near public transport.",
       "user": {
@@ -693,7 +693,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1015,
+      "id": "1015",
       "name": "Modern Duplex",
       "description": "Two-level duplex with rooftop access.",
       "user": {
@@ -734,7 +734,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1016,
+      "id": "1016",
       "name": "Island Cottage",
       "description": "Quiet cottage on a small island.",
       "user": {
@@ -775,7 +775,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1017,
+      "id": "1017",
       "name": "Skylight Residence",
       "description": "House with large skylights and natural lighting.",
       "user": {
@@ -816,7 +816,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1018,
+      "id": "1018",
       "name": "Glass House",
       "description": "Architectural glass house with panoramic views.",
       "user": {
@@ -857,7 +857,7 @@
       "houseAmenitiesto": null
     },
     {
-      "id": 1019,
+      "id": "1019",
       "name": "Forest Lodge",
       "description": "Lodge immersed in forest with hiking access.",
       "user": {
@@ -899,5 +899,6 @@
     }
   ],
   "me": [],
-  "login": []
+  "login": [
+  ]
 }

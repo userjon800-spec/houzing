@@ -16,7 +16,7 @@ function GenCarousel() {
   };
   return (
     <Container>
-      <Chewron data-name="right" onClick={onMove} left />
+      <Chewron data-name="right" onClick={onMove} left={"true"} />
       <Carousel ref={slider} infinite={false}>
         <Img src={img1} />
         <Img src={img2} />
@@ -29,7 +29,7 @@ function GenCarousel() {
         </Content.Desc>
         <Content.Price>5,250/month</Content.Price>
       </Content>
-      <Chewron data-name="left" onClick={onMove} right />
+      <Chewron data-name="left" onClick={onMove} right={"true"} />
     </Container>
   );
 }
