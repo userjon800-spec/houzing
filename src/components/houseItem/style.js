@@ -124,7 +124,6 @@ User.Img = styled.img`
 `;
 const ImageContainer = styled.div`
   display: flex;
-  padding: var(--padding);
   width: 100%;
   max-width: 1440px;
   margin: auto;

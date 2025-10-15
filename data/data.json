@@ -40,6 +40,7 @@
       "id": "630",
       "name": "afeafd",
       "description": "afeafdsf",
+      "favorites": false,
       "user": {
         "id": 59,
         "first_name": "Hayotbek",
@@ -81,6 +82,7 @@
       "id": "941",
       "name": "Chiroyli uy",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+      "favorites": true,
       "user": {
         "id": 325,
         "first_name": "Jamshid",
@@ -122,6 +124,7 @@
       "id": "1001",
       "name": "Sunset Villa",
       "description": "Spacious villa with garden and terrace.",
+      "favorites": true,
       "user": {
         "id": 401,
         "first_name": "Aziza",
@@ -163,6 +166,7 @@
       "id": "1002",
       "name": "Green Cottage",
       "description": "Cozy cottage near lake.",
+      "favorites": false,
       "user": {
         "id": 402,
         "first_name": "Bek",
@@ -204,6 +208,7 @@
       "id": "1003",
       "name": "Downtown Flat",
       "description": "Modern apartment in city center.",
+      "favorites": true,
       "user": {
         "id": 403,
         "first_name": "Nilufar",
@@ -245,6 +250,7 @@
       "id": "1004",
       "name": "Seaside Bungalow",
       "description": "Bungalow with sea view and palm garden.",
+      "favorites": false,
       "user": {
         "id": 404,
         "first_name": "Shahzoda",
@@ -286,6 +292,7 @@
       "id": "1005",
       "name": "Mountain Cabin",
       "description": "Rustic cabin ideal for weekend getaways.",
+      "favorites": false,
       "user": {
         "id": 405,
         "first_name": "Jasur",
@@ -327,6 +334,7 @@
       "id": "1006",
       "name": "Urban Studio",
       "description": "Compact studio perfect for singles.",
+      "favorites": false,
       "user": {
         "id": 406,
         "first_name": "Dilbar",
@@ -368,6 +376,7 @@
       "id": "1007",
       "name": "Family Home",
       "description": "Nice family house with backyard and play area.",
+      "favorites": false,
       "user": {
         "id": 407,
         "first_name": "Rustam",
@@ -409,6 +418,7 @@
       "id": "1008",
       "name": "Loft Space",
       "description": "Industrial loft with high ceilings.",
+      "favorites": false,
       "user": {
         "id": 408,
         "first_name": "Madina",
@@ -450,6 +460,7 @@
       "id": "1009",
       "name": "Eco Home",
       "description": "Energy-efficient home with solar panels.",
+      "favorites": false,
       "user": {
         "id": 409,
         "first_name": "Sardor",
@@ -491,6 +502,7 @@
       "id": "1010",
       "name": "Historic Manor",
       "description": "Renovated manor with original features.",
+      "favorites": false,
       "user": {
         "id": 410,
         "first_name": "Nilufar",
@@ -532,6 +544,7 @@
       "id": "1011",
       "name": "Riverside Terrace",
       "description": "Terraced house overlooking river.",
+      "favorites": false,
       "user": {
         "id": 411,
         "first_name": "Umar",
@@ -573,6 +586,7 @@
       "id": "1012",
       "name": "Desert Retreat",
       "description": "Minimalist house in desert surroundings.",
+      "favorites": false,
       "user": {
         "id": 412,
         "first_name": "Laylo",
@@ -614,6 +628,7 @@
       "id": "1013",
       "name": "Ranch Estate",
       "description": "Large estate with open fields and stables.",
+      "favorites": false,
       "user": {
         "id": 413,
         "first_name": "Komil",
@@ -655,6 +670,7 @@
       "id": "1014",
       "name": "Compact Condo",
       "description": "Affordable condo near public transport.",
+      "favorites": false,
       "user": {
         "id": 414,
         "first_name": "Zebo",
@@ -696,6 +712,7 @@
       "id": "1015",
       "name": "Modern Duplex",
       "description": "Two-level duplex with rooftop access.",
+      "favorites": false,
       "user": {
         "id": 415,
         "first_name": "Olim",
@@ -737,6 +754,7 @@
       "id": "1016",
       "name": "Island Cottage",
       "description": "Quiet cottage on a small island.",
+      "favorites": false,
       "user": {
         "id": 416,
         "first_name": "Gulnora",
@@ -778,6 +796,7 @@
       "id": "1017",
       "name": "Skylight Residence",
       "description": "House with large skylights and natural lighting.",
+      "favorites": false,
       "user": {
         "id": 417,
         "first_name": "Azim",
@@ -819,6 +838,7 @@
       "id": "1018",
       "name": "Glass House",
       "description": "Architectural glass house with panoramic views.",
+      "favorites": false,
       "user": {
         "id": 418,
         "first_name": "Murod",
@@ -860,6 +880,7 @@
       "id": "1019",
       "name": "Forest Lodge",
       "description": "Lodge immersed in forest with hiking access.",
+      "favorites": true,
       "user": {
         "id": 419,
         "first_name": "Islom",
@@ -898,7 +919,47 @@
       "houseAmenitiesto": null
     }
   ],
-  "me": [],
+  "me": [
+    {
+      "id": "96b7",
+      "houseDetails": {
+        "room": 23523,
+        "garage": 523,
+        "beds": 2354235,
+        "bath": 5423,
+        "area": 235432,
+        "yearBuilt": 66546
+      },
+      "houseAmenitiesto": {
+        "parking": true,
+        "park": true,
+        "busStop": true,
+        "garden": true
+      },
+      "country": "Rasm ",
+      "region": "efafeafawe",
+      "address": "efawfw",
+      "city": "Tashkent",
+      "name": "Xamdamboyev Javohir",
+      "price": 4646,
+      "salePrice": 465465,
+      "zipCode": "afew",
+      "description": "lroem feiafjea flkjewaiofjslkfjewaiofjdklsjioasdjflkanbajfklewajflksaf; aseljfkewioafjlasdkfjlksad",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/200/201",
+          "id": "6"
+        }
+      ]
+    }
+  ],
+  "register": [],
   "login": [
-  ]
+    {
+      "id": "9ac5",
+      "email": "Javohir",
+      "password": "eawfweafaw"
+    }
+  ],
+  "favorites": []
 }

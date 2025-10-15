@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react";
-import { Container, Content,Context } from "./style";
+import { Container, Content, Context } from "./style";
 import HouseCard from "../HouseCard/index";
 import { useLocation, useNavigate } from "react-router-dom";
 function Properties() {
@@ -22,22 +22,25 @@ function Properties() {
   return (
     <Container>
       <Content>
-        <h1 className="title">Properties</h1> <br />
-        <div className="info">
+        <h1 style={{ textAlign: "center" }} className="title">
+          Properties
+        </h1>{" "}
+        <br />
+        <div style={{ textAlign: "center" }} className="info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
         </div>
       </Content>
       <Context>
         {data &&
-        data?.map((val) => {
-          return (
-            <HouseCard
-              onClick={() => onSelect(val.id)}
-              data={val}
-              key={val.id}
-            />
-          );
-        })}
+          data?.map((val) => {
+            return (
+              <HouseCard
+                onClick={() => onSelect(val.id)}
+                data={val}
+                key={val.id}
+              />
+            );
+          })}
       </Context>
     </Container>
   );

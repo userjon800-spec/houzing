@@ -2,7 +2,7 @@
 import { message } from "antd";
 let { REACT_APP_BASE_URL } = process.env;
 let useRequest = () => {
-  const [messageApi, contextHolder] = message.useMessage();
+  const [messageApi] = message.useMessage();
   const warning = (error) => {
     messageApi.open({
       type: "warning",

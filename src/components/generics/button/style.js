@@ -38,7 +38,8 @@ let Container = styled.button`
   align-items: center;
   border-radius: 2px;
   min-width: 120px;
-  cursor: pointer;
+  opacity: ${({ disabled }) => (disabled ? 0.7 : 1)};
+  cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   font-size: ${({ font }) => (font ? font + "px" : "14px")};
   height: ${({ heigth }) => (heigth ? heigth + "px" : "44px")};
   width: ${getWidth};

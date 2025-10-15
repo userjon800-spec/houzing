@@ -1,6 +1,9 @@
 import React from "react";
 import useUniquieId from "../hooks/useId";
-import SigninPage from "../pages/signin";
+import FavoritesPage from "../pages/favorites";
+import RegisterPage from "../pages/register";
+import MyProfile from "../pages/profile";
+import AddNewHouse from "../pages/addHouse"
 const PropertiesPage = React.lazy(() => import("../pages/properties"));
 const HomePage = React.lazy(() => import("../pages/home"));
 const HousePage = React.lazy(() => import("../pages/houseItem"));
@@ -43,7 +46,7 @@ export const navbar = [
   },
   {
     id: useUniquieId,
-    element: <SigninPage />,
+    element: <RegisterPage />,
     title: "Sign in",
     path: "/signin",
     private: false,
@@ -51,10 +54,34 @@ export const navbar = [
   },
   {
     id: useUniquieId,
-    element: <h1>saf</h1> ,
-    title: "Sign Up",
-    path: "/signup",
-    private: false,
+    element: <FavoritesPage />,
+    title: "Favorites",
+    path: "/favorites",
+    private: true,
+    hidden: true,
+  },
+  {
+    id: useUniquieId,
+    element: <MyProfile />,
+    title: "My profile",
+    path: "/profile",
+    private: true,
+    hidden: true,
+  },
+  {
+    id: useUniquieId,
+    element: <AddNewHouse />,
+    title: "Add New House",
+    path: "/profile/new-house",
+    private: true,
+    hidden: true,
+  },
+  {
+    id: useUniquieId,
+    element: <AddNewHouse />,
+    title: "Add New House",
+    path: "/profile/edit-house/:id",
+    private: true,
     hidden: true,
   },
 ];

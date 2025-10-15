@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Container, Content, Details, Divider, Icons, Img } from "./style";
-
+import { toast } from "react-toastify";
+import { PropertiesContext } from "../../context/properties";
 function HouseCard({ data, gap, onClick }) {
+  let [state] = useContext(PropertiesContext);
   if (!data) return null;
   let {
     attachments,
@@ -11,8 +14,48 @@ function HouseCard({ data, gap, onClick }) {
     houseDetails,
     salePrice,
     price,
+    id,
+    favorites,
     category,
   } = data;
+  let { REACT_APP_BASE_URL: url } = process.env;
+  let post = (e) => {
+    e?.stopPropagation();
+    fetch(`${url}list/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ favorites: !favorites }),
+    })
+      .then((res) => res.json())
+      .then(() => {
+        if (favorites) {
+          toast.warn("Succes fully disliked", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        } else {
+          toast.success("Succes fully liked", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+        state.refetch && state.refetch();
+      });
+  };
   return (
     <Container onClick={onClick} gap={gap}>
       <Img
@@ -61,7 +104,7 @@ function HouseCard({ data, gap, onClick }) {
         </Details.Item>
         <Details.Item row={"true"}>
           <Icons.Keng />
-          <Icons.Love />
+          <Icons.Love onClick={post} favorites={favorites} />
         </Details.Item>
       </Content>
     </Container>

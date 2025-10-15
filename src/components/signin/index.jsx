@@ -1,11 +1,9 @@
 import { Container, Content } from "./style";
 import { Button, Input } from "../generics";
-import { useRequest } from "../../hooks/useRequest";
 import { useState } from "react";
 import { message } from "antd";
 import { useNavigate } from "react-router-dom";
 function SigIn() {
-  let request = useRequest();
   let navigate = useNavigate();
   const [body, setBody] = useState({
     email: "",
@@ -37,7 +35,6 @@ function SigIn() {
     });
   };
   let onSubmit = () => {
-    // request({ url: `login`, body, method: "POST" })
     if (body.email === "" || body.password === "") {
       error();
       return;
@@ -49,7 +46,7 @@ function SigIn() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data?.id) { 
+        if (data?.id) {
           success();
           setTimeout(() => {
             navigate("/home");
@@ -60,7 +57,6 @@ function SigIn() {
         }
       });
   };
-
   return (
     <Container>
       {contextHolder}

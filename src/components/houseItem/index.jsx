@@ -9,6 +9,9 @@ import {
   Description,
   Wrapper,
   User,
+  ImageContainer,
+  ImgContainer,
+  Blur,
 } from "./style";
 import { useEffect, useState } from "react";
 import { Button, Input } from "../generics";
@@ -39,6 +42,37 @@ function HouseItem() {
   }, [params?.id]);
   return (
     <>
+      <ImageContainer>
+        <ImageContainer.Main
+          src={
+            (data?.attachmets && data?.attachmets[0]?.imgPath) ||
+            "https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg"
+          }
+          alt="rasm"
+        />
+        <ImgContainer>
+          {data.attachmets &&
+            data?.attachmets?.slice(1, 5).map((val, i) => {
+              return data.attachmets?.length > 5 && i === 3 ? (
+                <Blur.Container>
+                  <ImageContainer.Subimg
+                    key={i}
+                    src={val?.imgPath || "https://picsum.photos/280/190"}
+                    alt="rasm"
+                  />
+                  <Blur> +{data?.attachmets?.length - 5} </Blur>
+                </Blur.Container>
+              ) : (
+                <ImageContainer.Subimg
+                  key={i}
+                  src={val?.imgPath || "https://picsum.photos/280/190"}
+                  alt="rasm"
+                />
+              );
+            })}
+        </ImgContainer>
+        <Contents></Contents>
+      </ImageContainer>
       <Wrapper>
         <Container flex={4}>
           <Section>
