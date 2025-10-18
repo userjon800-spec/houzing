@@ -25,7 +25,7 @@ function HouseItem() {
   const [data, setData] = useState({});
   useEffect(() => {
     params?.id &&
-      fetch(`${url}list/?id=${params?.id}`, {
+      fetch(`${url}me/?id=${params?.id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

@@ -72,7 +72,7 @@ function Navbar() {
             {token ? (
               <Dropdown
                 overlay={menu}
-                placement="topRight"
+                placement="bottomRight"
                 arrow={{ pointAtCenter: true }}
                 trigger="click"
               >

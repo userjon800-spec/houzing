@@ -951,6 +951,36 @@
           "id": "6"
         }
       ]
+    },
+    {
+      "id": "212f",
+      "houseDetails": {
+        "yearBuilt": 78676,
+        "room": 64654,
+        "garage": 4676,
+        "beds": 54654,
+        "bath": 6465,
+        "area": 468654
+      },
+      "houseAmenitiesto": {
+        "busStop": true,
+        "market": true
+      },
+      "country": "feawfwe",
+      "region": "efae",
+      "address": "eafeaefaef",
+      "city": "efaefaw",
+      "name": "Xamdamboyev Javohir",
+      "price": 4646,
+      "salePrice": 465465,
+      "zipCode": "efaefaewf",
+      "description": "fjeioafjeklawfjlweaf",
+      "attachments": [
+        {
+          "imgPath": "https://picsum.photos/200/200",
+          "id": "0"
+        }
+      ]
     }
   ],
   "register": [],

@@ -9,13 +9,12 @@ function Favorites() {
   const [data, setData] = useState([]);
   let { search } = useLocation();
   let navigate = useNavigate();
+  // eslint-disable-next-line no-unused-vars
   let [state, dispatch] = useContext(PropertiesContext);
-  console.log(state, "state");
-  // console.log(data, "datal");
   let { refetch } = useQuery(
      [search],
     async () => {
-      let response = await fetch(`${url}favorites`);
+      let response = await fetch(`${url}list`);
       if (!response.ok) throw new Error(`Error: ${response.status}`);
       return await response.json();
     },
@@ -38,7 +37,7 @@ function Favorites() {
     <Container>
       <Content>
         <h1 style={{ textAlign: "center" }} className="title">
-          Properties
+          Favorites
         </h1>{" "}
         <br />
         <div style={{ textAlign: "center" }} className="info">
